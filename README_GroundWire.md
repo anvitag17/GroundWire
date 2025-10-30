@@ -1,12 +1,12 @@
-# 🌎 GroundWire: Student Voices for Loudoun
+# GroundWire: Student Voices for Loudoun
 
 **A student-built civic engagement app helping Loudoun County residents take action on the Dominion Energy Golden-to-Mars 500 kV transmission line project — and future infrastructure developments.**
 
-🔗 **Live App:** [https://groundwirestudenthub.glide.page](https://groundwirestudenthub.glide.page)
+**Live App:** [https://groundwirestudenthub.glide.page](https://groundwirestudenthub.glide.page)
 
 ---
 
-## 📱 Overview
+## Overview
 GroundWire is a civic-tech app built with **Glide**, **Google Sheets**, and **Google Apps Script**.  
 It helps residents:
 - Track SCC alerts, hearings, and comment deadlines  
@@ -17,7 +17,7 @@ It helps residents:
 
 ---
 
-## ⚙️ Architecture
+## Architecture
 
 | Layer | Purpose |
 |-------|----------|
@@ -28,15 +28,15 @@ It helps residents:
 
 ---
 
-## 🧩 Behind the Scenes
+## Behind the Scenes
 
-### 🔹 1. Data Structure
+### 1. Data Structure
 - Tabs: `About`, `Alerts`, `Officials`, `Volunteer Sign-Up`, `Media Coverage`
 - Key columns:  
   `Order`, `Category`, `Image_URL`, `Contact_Link`, `Pinned`, `Level`
 - Relations & Lookups link officials to their government levels (county, state, federal).
 
-### 🔹 2. JavaScript Column Example
+### 2. JavaScript Column Example
 Automatically convert shared links into display-ready images.
 
 ```js
@@ -56,14 +56,14 @@ This keeps cards colorful and visual in Glide’s grid view.
 
 ---
 
-## 📧 Instant Email Notifications (Apps Script)
+## Instant Email Notifications (Apps Script)
 
 ### `Code.gs`
 ```javascript
 function doPost(e) {
   const data = JSON.parse(e.postData.contents || "{}");
 
-  // 1️⃣ Send Email
+  // Send Email
   if (data.type === "email") {
     MailApp.sendEmail({
       to: data.to,
@@ -73,7 +73,7 @@ function doPost(e) {
     return ContentService.createTextOutput("ok");
   }
 
-  // 2️⃣ Add Media Coverage
+  // Add Media Coverage
   if (data.type === "addCoverage" && data.url) {
     const html = UrlFetchApp.fetch(data.url).getContentText();
     const getOG = prop => {
@@ -107,7 +107,7 @@ function doPost(e) {
 
 ---
 
-## 📰 Adding Media Coverage Automatically
+## Adding Media Coverage Automatically
 
 When a URL is submitted through Glide:
 1. `doPost()` fetches HTML.  
@@ -117,7 +117,7 @@ When a URL is submitted through Glide:
 
 ---
 
-## 💡 Example Workflow
+## Example Workflow
 
 1. **Volunteer submits** form in app  
    → Glide triggers webhook → Apps Script → immediate email to admin.  
@@ -126,14 +126,14 @@ When a URL is submitted through Glide:
 
 ---
 
-## 🛡️ Privacy & Security
+## Privacy & Security
 - Public data only; no personal emails shown in the app.  
 - Volunteer emails stored privately in Sheets.  
 - No third-party analytics or cookies.
 
 ---
 
-## 🧠 Future Improvements (Version 2.0)
+## Future Improvements (Version 2.0)
 - Push notifications for new SCC filings  
 - Data-visualization dashboard (petition growth, volunteer count)  
 - Language translation & accessibility support  
@@ -141,15 +141,15 @@ When a URL is submitted through Glide:
 
 ---
 
-## 🧾 License
+## License
 MIT License — free to use, adapt, and extend for civic-tech or educational purposes.
 
 ---
 
-### 👩‍💻 Author
-**[Your Name]**, 10th Grade  
+### Author
+**Anvita Gandhari**, 10th Grade  
 Rock Ridge High School / Academy of Engineering & Technology, VA  
-📧 Contact: [your email (optional)]  
+📧 Contact: anvita.gandhari@gmail.com  
 
 ---
 
