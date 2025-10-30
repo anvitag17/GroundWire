@@ -149,9 +149,8 @@ MIT License — free to use, adapt, and extend for civic-tech or educational pur
 ### Author
 **Anvita Gandhari**, 10th Grade  
 Rock Ridge High School / Academy of Engineering & Technology, VA  
-📧 Contact: anvita.gandhari@gmail.com  
 
 ---
 
-### 🏛️ Congressional App Challenge 2025
+### Congressional App Challenge 2025
 > This repository is part of my submission for the **Congressional App Challenge 2025**, showcasing how students can use low-code tools and automation to empower civic engagement in their communities.
