@@ -9,12 +9,12 @@ This project demonstrates how students can use technology for civic engagement a
 
 ### 1. Clone or Fork this Repository
 ```bash
-git clone https://github.com/<yourusername>/groundwire.git
+git clone https://github.com/anvitag17/groundwire.git
 cd groundwire
 ```
 
 ### 2. Set Up Google Sheets and Glide
-- Open the `powerlines-10-29.xlsx` file or import the data into **Google Sheets**.
+- Open the `GroundWire_StudentsEngagement.xlsx` file or import the data into **Google Sheets**.
 - Connect the Google Sheet to **Glide** ([https://glideapps.com](https://glideapps.com)).
 - Verify tabs like `About`, `Alerts`, `Officials`, `Volunteer Sign-Up`, and `Media Coverage`.
 
@@ -62,5 +62,5 @@ If you'd like to contribute, consider:
 ---
 
 ### 🙌 Acknowledgments
-Built for the **2025 Congressional App Challenge** by [Your Name], Rock Ridge High School / AET, Loudoun County, VA.
+Built for the **2025 Congressional App Challenge** by Anvita Gandhari, Rock Ridge High School / AET, Loudoun County, VA.
 
