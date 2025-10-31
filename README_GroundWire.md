@@ -7,7 +7,7 @@
 ---
 
 ## Overview
-GroundWire is a civic-tech app built with **Glide**, **Google Sheets**, and **Google Apps Script**.  
+GroundWire is a civic-tech app built with **Glide**, **Java Script**, **Google Sheets**, and **Google Apps Script**.  
 It helps residents:
 - Track SCC alerts, hearings, and comment deadlines  
 - View environmental & economic reasons to underground power lines  
